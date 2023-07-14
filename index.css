@@ -1,0 +1,103 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 42px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: bounce 1s infinite alternate;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  #filter {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffcc00;
+    font-size: 18px;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  #emojiList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .emojiCard {
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+    background: linear-gradient(180deg, #c3f3c0dd 0%, #e1e7c1 100%);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), 0 3px 10px rgba(0, 0, 0, 0.2);
+  }  
+  
+  .emojiCard h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 5px 0;
+    text-transform: capitalize;
+  }  
+  
+ .emojiCard p {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  #pagination {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #pagination a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #pagination a.active {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  
+  /* Mobile View */
+  @media (max-width: 600px) {
+    .emojiCard {
+      width: 100%;
+    }
+  }
+  
+  /* Tablet View */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .emojiCard {
+      width: 48%;
+    }
+  }
+  
+  /* Desktop View */
+  @media (min-width: 1025px) {
+    .emojiCard {
+      width: 30%;
+    }
+  } 
